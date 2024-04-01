@@ -1,0 +1,5 @@
+i=input("введите числа")
+mylist=i.split()
+mytuple=tuple(mylist)
+print(mylist)
+print(mytuple)
