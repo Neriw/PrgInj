@@ -26,7 +26,7 @@ print(mylist)
 print(mytuple)
 ```
 ### Результат.
-![Меню](https://github.com/Neriw/PrgInj/blob/%D0%A2%D0%B5%D0%BC%D0%B0_5/pic/Lab5_1.png)
+![Меню](https://github.com/Neriw/PrgInj/blob/%D0%A2%D0%B5%D0%BC%D0%B0_6/pic/Lab6_1.png)
 ### Выводы
 В данном коде на вход поступает от пользователя информация в виде чисел, разделенных пробелом, и затем преобразуется в список и кортеж. После этого выводится полученные список и кортеж на экран
   
@@ -63,7 +63,7 @@ print(changetuple1)
 
 ```
 ### Результат.
-![Меню](https://github.com/Neriw/PrgInj/blob/%D0%A2%D0%B5%D0%BC%D0%B0_5/pic/Lab5_2.png)
+![Меню](https://github.com/Neriw/PrgInj/blob/%D0%A2%D0%B5%D0%BC%D0%B0_6/pic/Lab6_2.png)
 ### Выводы
 Кортежи являются неизменяемыми. Но преобзазуя кортеж в список можно удалить элемент, а затем преобразовать список обратно в кортеж.
   
@@ -82,7 +82,7 @@ def number(str):
 print(number(str))
 ```
 ### Результат.
-![Меню](https://github.com/Neriw/PrgInj/blob/%D0%A2%D0%B5%D0%BC%D0%B0_5/pic/Lab5_3.png)
+![Меню](https://github.com/Neriw/PrgInj/blob/%D0%A2%D0%B5%D0%BC%D0%B0_6/pic/Lab6_3.png)
 ### Выводы
 В этом задании используется словарь. В нем содержатся пары ключ - значение, где ключ - числовой идентификатор, а значение - это количество вхождений слова, увеличивающееся при каждом новом вхождении. Из полученного отсортированного словаря выводятся три наиболее часто встречающиеся пары.
   
@@ -113,7 +113,7 @@ print(validate(tuple2,id1))
 print(validate(tuple3,id1))
 ```
 ### Результат.
-![Меню](https://github.com/Neriw/PrgInj/blob/%D0%A2%D0%B5%D0%BC%D0%B0_5/pic/Lab5_4.png)
+![Меню](https://github.com/Neriw/PrgInj/blob/%D0%A2%D0%B5%D0%BC%D0%B0_6/pic/Lab6_4.png)
 ### Выводы
 В коде функция validate ищет элемент в кортеже и возвращает часть кортежа от первого вхождения элемента до последнего включительно. Далее вызывается функция validate для каждого кортежа и выводится результат.
   
@@ -125,7 +125,7 @@ mytuple=tuple(str)
 print(f"Вы ввели = {len(mytuple)} цифр")
 ```
 ### Результат.
-![Меню](https://github.com/Neriw/PrgInj/blob/%D0%A2%D0%B5%D0%BC%D0%B0_5/pic/Lab5_5.png)
+![Меню](https://github.com/Neriw/PrgInj/blob/%D0%A2%D0%B5%D0%BC%D0%B0_6/pic/Lab6_5.png)
 ### Выводы
 В данном коде считается количество цифр введеных пользователем с клавиатуры.
   
