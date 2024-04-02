@@ -92,48 +92,57 @@ City2.infobl()
 ### Результат.
 ![Меню](https://github.com/Neriw/PrgInj/blob/%D0%A2%D0%B5%D0%BC%D0%B0_8/pic/Lab8_3.png)
 ### Выводы
-В программе считается кол-во букв, слов и строк
+В данном коде создан класс реализовано наследование класса City классом Obl
   
 ## Самостоятельная работа №4
-### Напишите программу, которая получает на вход предложение, выводит его в терминал, заменяя все запрещенные слова звездочками * (количество звездочек равно количеству букв в слове). Запрещенные слова, разделенные символом пробела, хранятся в текстовом файле input.txt. Все слова в этом файле записаны в нижнем регистре. Программа должна заменить запрещенные слова, где бы они ни встречались, даже в середине другого слова. Замена производится независимо от регистра: если файл input.txt содержит запрещенное слово exam, то слова exam, Exam, ExaM, EXAM и exAm должны быть заменены на ****. • Запрещенные слова: hello email python the exam wor is
-### • Предложение для проверки:
-### Hello, world! Python IS the programming language of thE future. My EMAIL is....
-### PYTHON is awesome!!!!
-### • Ожидаемый результат:
-### *****, ***ld! ****** ** *** programming language of *** future. My ***** **....
-### ****** ** awesome!!!!
+### Самостоятельно реализуйте инкапсуляцию, продолжая работать с ранее созданным классом. Она должна отличаться, от того, что указана в теоретическом материале (методичке) и лабораторных заданиях. Результатом выполнения задания будет листинг кода и получившийся вывод консоли.
 ```python
-word=["hello", "email", "python", "the", "exam", "wor", "is"]
-try:
-    with open("input.txt","r", encoding='utf-8') as file:
-        content=file.read()
-        low = content.lower()
-        for i in range(len(word)):
-            low=low.replace(word[i],"*")
-        print(low)
-except Exception as e:
-    print("Ошибка: ", str(e))
+class City:
+    def __init__(self, name, country, language):
+        self.name = name
+        self.country = country
+        self.language = language
+    def inf(self):
+        return f"Информация о городе:\nНазвание: {self.name}\nСтрана: {self.country}\nЯзык: {self.language}"
+
+City1 = City("Москва", "Россия", "Русский")
+print(City1.name)
+print(City1.inf())
+
 ```
 ### Результат.
-![Меню](https://github.com/Neriw/PrgInj/blob/%D0%A2%D0%B5%D0%BC%D0%B0_7/pic/Lab7_4.png)
+![Меню](https://github.com/Neriw/PrgInj/blob/%D0%A2%D0%B5%D0%BC%D0%B0_8/pic/Lab8_4.png)
 ### Выводы
-Программа заменяет все запрещенные слова *, в зависимости от кол-ва символов на такое же количесвто *
+В данном коде реализвана инкапсуляция
   
 ## Самостоятельная работа №5
-### Прочитать информацию из файла и удалить все символы "-"
+### Самостоятельно реализуйте полиморфизм. Он должен отличаться, от того, что указан в теоретическом материале (методичке) и лабораторных заданиях. Результатом выполнения задания будет листинг кода и получившийся вывод консоли.
 ```python
-try:
-    with open("Task5.txt","r", encoding='utf-8') as file:
-        content=file.read()
-        print(content.replace("-",""))
-except Exception as e:
-    print("Ошибка: ", str(e))
+class obj:
+    def inf(self):
+        pass
+class City(obj):
+    def __init__(self, name, country, language):
+        self.name = name
+        self.country = country
+        self.language = language
+    def inf(self):
+        print(f"Информация о городе:\nНазвание: {self.name}\nСтрана: {self.country}\nЯзык: {self.language}")
+class StreetIn(obj):
+    def __init__(self, name, street):
+        self.name=name
+        self.street=street
+    def inf(self):
+        print(f"Город = {self.name}\nУлица = {self.street}")
+City1 = City("Москва", "Россия", "Русский")
+City1.inf()
+City2 = StreetIn("Омск", "Ленина")
+City2.inf()
 ```
 ### Результат.
-![Меню](https://github.com/Neriw/PrgInj/blob/%D0%A2%D0%B5%D0%BC%D0%B0_7/pic/Lab7_5_1.png)
-![Меню](https://github.com/Neriw/PrgInj/blob/%D0%A2%D0%B5%D0%BC%D0%B0_7/pic/Lab7_5_2.png)
+![Меню](https://github.com/Neriw/PrgInj/blob/%D0%A2%D0%B5%D0%BC%D0%B0_8/pic/Lab8_5.png)
 ### Выводы
-В данном коде удаляются все символы "-"
+В данном коде реализван полиморфизм
   
 ## Общие выводы по теме
-В этой самостоятельной работе была изучена работа с файлами (ввод, вывод)
+В этой самостоятельной работе была изучены основы объектно-ориентированного программирования
